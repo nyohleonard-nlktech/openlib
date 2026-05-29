@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>OpenLit - EduLink Team</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0b1220;
+    color:white;
+    font-family:Arial,sans-serif;
+    padding:15px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+}
+
+header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.logo{
+    width:120px;
+    height:auto;
+    margin-bottom:15px;
+}
+
+h1{
+    color:#3b82f6;
+    font-size:2.5rem;
+}
+
+.subtitle{
+    color:#94a3b8;
+    margin-top:10px;
+    line-height:1.5;
+}
+
+.hero{
+    background:#111827;
+    padding:20px;
+    border-radius:18px;
+    margin-bottom:25px;
+    border:1px solid #1e293b;
+}
+
+.hero h2{
+    color:#60a5fa;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    line-height:1.6;
+}
+
+.section-title{
+    margin-bottom:15px;
+    color:#3b82f6;
+}
+
+.cards{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:18px;
+    border:1px solid #334155;
+}
+
+.card h3{
+    color:#60a5fa;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#cbd5e1;
+    margin-bottom:15px;
+    line-height:1.5;
+}
+
+.button{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:12px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#1d4ed8;
+}
+
+video{
+    width:100%;
+    border-radius:12px;
+    margin-top:10px;
+}
+
+footer{
+    margin-top:40px;
+    text-align:center;
+    color:#64748b;
+    font-size:0.9rem;
+    line-height:1.6;
+}
+
+.highlight{
+    color:#60a5fa;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<img src="/images/unibam_logo.png"
+     class="logo">
+
+<h1>OpenLit</h1>
+
+<p class="subtitle">
+
+Offline Educational Library System
+
+<br><br>
+
+University of Bamenda
+
+<br>
+
+National Higher Polytechnic Institute (NAHPI)
+
+</p>
+
+</header>
+
+<section class="hero">
+
+<h2>Learn Without Internet</h2>
+
+<p>
+
+OpenLit allows students to access lecture notes,
+past questions, videos, and educational materials
+offline directly on campus using local wireless access.
+
+</p>
+
+</section>
+
+<h2 class="section-title">
+
+Educational Resources
+
+</h2>
+
+<section class="cards">
+
+<div class="card">
+
+<h3>📘 Lecture Notes</h3>
+
+<p>
+
+Download lecture notes and study materials
+directly to your phone.
+
+</p>
+
+<a href="/notes/python.pdf"
+   download
+   class="button">
+
+Download Notes
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🎥 Educational Video</h3>
+
+<p>
+
+Watch educational content directly from the local server.
+
+</p>
+
+<video controls>
+
+<source src="/videos/intro.mp4"
+        type="video/mp4">
+
+</video>
+
+</div>
+
+<div class="card">
+
+<h3>📝 Past Papers</h3>
+
+<p>
+
+Practice using previous examination papers.
+
+</p>
+
+<a href="/notes/python.pdf"
+   class="button">
+
+Open Papers
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+Built by <span class="highlight">EduLink Team</span>
+
+<br>
+
+OpenLit MVP — ESP32 Offline Learning Platform
+
+</p>
+
+</footer>
+
+</div>
+
+</body>
+</html>
