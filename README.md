@@ -1,55 +1,39 @@
 # OpenLib
 
-**An offline educational library concept for sharing learning resources over a local network.**
+An offline educational library concept for sharing learning resources over a local network.
 
-The website presents an educational resource hub for students at the University of Bamenda / NAHPI. Its content describes access to lecture notes, past examination papers, and educational videos through a local server, with the goal of supporting learning when internet access is limited.
+The website presents a resource hub for students at the University of Bamenda / NAHPI. Its content describes access to lecture notes, past examination papers, and educational videos through a local server, supporting learning where internet access is limited.
 
-## Concept and content
-
+## Content
 - Educational notes and downloadable resources.
 - Past-paper access.
-- Embedded educational video content.
+- Embedded educational videos.
 - Local-network access concept for campus use.
 
 ## Technology
-
-The current repository is a static HTML website with local media folders. A separate local server or campus network configuration is required to provide resources to multiple devices.
+Static HTML and local media folders. A separate local server or campus network configuration is needed to provide resources to multiple devices.
 
 ## Run locally
-
 ```bash
 git clone https://github.com/nyohleonard-nlktech/openlib.git
 cd openlib
 python -m http.server 8000
 ```
 
-Open `http://localhost:8000`.
+Visit http://localhost:8000.
 
-## Repository structure
-
+## Structure
 ```text
-.
-├── images/
-├── notes/
-├── videos/
-├── index.html
-└── README.md
+images/
+notes/
+videos/
+index.html
+README.md
 ```
 
-The page currently references example resource paths such as `/notes/python.pdf` and `/videos/intro.mp4`. Ensure those files exist in the expected directories before demonstrating the downloads or video player.
+The page references example paths such as /notes/python.pdf and /videos/intro.mp4. Ensure the referenced files exist before demonstrating downloads or video playback.
 
-## Local-network deployment
+## Campus LAN deployment
+Run a web server on a host reachable by student devices, configure firewall rules for the chosen port, and provide a stable local IP or DNS name. Test concurrent access and file permissions.
 
-To serve the library on a trusted campus LAN, run a web server on a host reachable by student devices and configure firewall rules for the chosen port. Provide a stable local IP address or local DNS name. Test simultaneous access and file permissions.
-
-## Important operational considerations
-
-- Use only resources you are authorized to distribute.
-- Do not expose private student information.
-- Keep a backup of the resource library.
-- Restrict administrative file uploads to trusted operators.
-- A static page alone does not implement user accounts, content management, or access control.
-
-## License
-
-No license file is currently present. All rights reserved unless an explicit license is added.
+Distribute only resources you are authorized to share. A static page alone does not provide accounts, content management, or access control. No license file is present; all rights reserved unless an explicit license is added.
